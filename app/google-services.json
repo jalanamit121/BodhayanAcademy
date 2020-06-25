@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "491972333930",
+    "firebase_url": "https://bodhayan-academy-dfa13.firebaseio.com",
+    "project_id": "bodhayan-academy-dfa13",
+    "storage_bucket": "bodhayan-academy-dfa13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491972333930:android:e5623f7d1054d48b2b5513",
+        "android_client_info": {
+          "package_name": "com.bodhayanacademy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491972333930-e5r267mdscnm5dkg1bjqtd78lnl0ptbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx81D_cT25OS3pk0K7mjb0NbBKq18F6o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491972333930-e5r267mdscnm5dkg1bjqtd78lnl0ptbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

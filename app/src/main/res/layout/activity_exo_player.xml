@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ExoPlayer">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/exoplayer_view"
+        />
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/userComments"-->
+<!--        android:layout_below="@+id/exoplayer_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:padding="5dp"-->
+<!--        android:background="@color/colorPrimary">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/txt_message"-->
+<!--                android:textColor="#fff"-->
+<!--                android:layout_weight="1"-->
+<!--                android:hint="Enter Message"/>-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="45dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:id="@+id/btn_send"-->
+<!--                android:background="#fff"-->
+<!--                android:src="@drawable/ic_send_black_24dp"/>-->
+<!--        </LinearLayout>-->
+
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/relative_layout_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editTextMessageLive"
+        android:layout_below="@id/exoplayer_view"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/liveMessageRecyclerViewLive"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/textNoMessageLive"
+            android:textSize="18sp"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/progressBarLive"
+
+            />
+
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Enter your Message ..."
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/editTextMessageLive"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_send_black_24dp"
+        android:id="@+id/sendMessageLive"
+
+        />
+
+</RelativeLayout>
